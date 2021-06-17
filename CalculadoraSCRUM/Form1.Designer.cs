@@ -50,6 +50,7 @@ namespace CalculadoraSCRUM
             this.Limpiar = new System.Windows.Forms.Button();
             this.Eliminar = new System.Windows.Forms.Button();
             this.pantalla = new System.Windows.Forms.TextBox();
+            this.button11 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -283,12 +284,27 @@ namespace CalculadoraSCRUM
             this.pantalla.Size = new System.Drawing.Size(360, 80);
             this.pantalla.TabIndex = 20;
             // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Red;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button11.Location = new System.Drawing.Point(281, 137);
+            this.button11.Name = "button11";
+            this.button11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button11.Size = new System.Drawing.Size(77, 33);
+            this.button11.TabIndex = 21;
+            this.button11.Text = "Salir";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(387, 499);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.pantalla);
             this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.Limpiar);
@@ -311,7 +327,8 @@ namespace CalculadoraSCRUM
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "UTSOFT";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,6 +357,7 @@ namespace CalculadoraSCRUM
         private System.Windows.Forms.Button Limpiar;
         private System.Windows.Forms.Button Eliminar;
         private System.Windows.Forms.TextBox pantalla;
+        private System.Windows.Forms.Button button11;
     }
 }
 

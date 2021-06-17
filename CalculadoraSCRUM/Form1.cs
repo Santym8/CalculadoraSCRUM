@@ -189,6 +189,7 @@ namespace CalculadoraSCRUM
                 memoria = Convert.ToDouble(pantalla.Text);
                 pantalla.Clear();
                 operacion = "potencia";
+                
             }
 
         }
@@ -233,6 +234,17 @@ namespace CalculadoraSCRUM
                 operacion = "";
 
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("¡¡¡¡¡Bienvenido!!!!!");
+        }
+
+        private void button11_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Muchas gracias por usar esta Calculadora");
+            this.Close();
         }
     }
 }
